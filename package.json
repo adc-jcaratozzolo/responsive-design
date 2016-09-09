@@ -1,0 +1,27 @@
+{
+  "name": "responsive-design",
+  "version": "1.0.0",
+  "description": "A collection of responsive design examples.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adc-jcaratozzolo/responsive-design.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "James Caratozzolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adc-jcaratozzolo/responsive-design/issues"
+  },
+  "homepage": "https://github.com/adc-jcaratozzolo/responsive-design#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
+}
