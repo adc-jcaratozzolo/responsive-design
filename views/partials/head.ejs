@@ -1,0 +1,35 @@
+<% if (slide === 0) { %>
+  <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
+  <link href='/css/utilities/_normalize.css' rel='stylesheet' type='text/css' />
+  <link href='/css/utilities/_base.css' rel='stylesheet' type='text/css' />
+  <link href='/css/utilities/_common.css' rel='stylesheet' type='text/css' />
+  <link href='/css/utilities/_index.css' rel='stylesheet' type='text/css' />
+<% } %>
+
+<!--
+SLIDE SHOW CONTENT
+-->
+
+<!--
+SLIDE 01: No CSS here to illustrate importance of good markup
+-->
+<% if (slide === 0) { %>
+
+<% } %>
+
+<!--
+SLIDE 02: Restore baseline CSS and introduce <meta name='viewport'>
+- width=device-width
+- initial-scale=1
+- user-scalable=no
+-->
+<% if (slide > 1) { %>
+  <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
+  <link href='/css/utilities/_normalize.css' rel='stylesheet' type='text/css' />
+  <link href='/css/utilities/_base.css' rel='stylesheet' type='text/css' />
+  <link href='/css/utilities/_common.css' rel='stylesheet' type='text/css' />
+<% } %>
+
+<% if (slide > 2) { %>
+  <link href='/css/media.css' rel='stylesheet' type='text/css' />
+<% } %>
