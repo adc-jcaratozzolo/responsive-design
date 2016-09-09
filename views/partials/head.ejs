@@ -1,51 +1,56 @@
+<!--
+SLIDE 00: Slide zero is the index page and not part of the demo. So it needs some basic styling.
+-->
 <% if (slide === 0) { %>
+  <% include ./css_baseline %>
   <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
-  <link href='/css/utilities/_normalize.css' rel='stylesheet' type='text/css' />
-  <link href='/css/utilities/_base.css' rel='stylesheet' type='text/css' />
-  <link href='/css/utilities/_common.css' rel='stylesheet' type='text/css' />
   <link href='/css/utilities/_index.css' rel='stylesheet' type='text/css' />
 <% } %>
 
 <!--
-SLIDE SHOW CONTENT
+SLIDE SHOW CONTENT STARTS HERE
 -->
 
 <!--
-SLIDE 01: No CSS here to illustrate importance of good markup
+/SLIDES/01: No CSS here to illustrate importance of good markup
+- when css, javascript are disabled, the site should maintain some structure and legibility
+- practice good semantics
+- imagine your users are actually reading the html markup
+- would they be able to make sense of the content?
 -->
 <% if (slide >= 1) { %>
 
 <% } %>
 
 <!--
-SLIDE 02: Restore baseline CSS and introduce <meta name='viewport'>
-- width=device-width
-- initial-scale=1
+/SLIDES/02: Restore baseline CSS and introduce <meta name='viewport'>
+- Device Pixel vs CSS Pixel, layout viewport (document) vs visual viewport (device)
+- width=device-width sets layout viewport to specific width (device-width = no horizontal scrolling)
+- initial-scale=1 sets zoom to fit neatly into the display
 - user-scalable=no
+- css @viewport ? broswser support unpredictable
 -->
 <% if (slide >= 2) { %>
+  <% include ./css_baseline %>
   <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
-  <link href='/css/utilities/_normalize.css' rel='stylesheet' type='text/css' />
-  <link href='/css/utilities/_base.css' rel='stylesheet' type='text/css' />
-  <link href='/css/utilities/_common.css' rel='stylesheet' type='text/css' />
 <% } %>
 
 <!--
-SLIDE 03: Images and embedded videos don't automatically resize like other block elements.
+/SLIDES/03: Images and embedded videos don't automatically resize like other block elements.
 -->
 <% if (slide >= 3) { %>
   <link href='/css/media.css' rel='stylesheet' type='text/css' />
 <% } %>
 
 <!--
-SLIDE 04: CSS media queries help adjust layouts as display size increases.
+/SLIDES/04: CSS media queries help adjust layouts as display size increases.
 -->
 <% if (slide >= 4) { %>
   <link href='/css/layouts.css' rel='stylesheet' type='text/css' />
 <% } %>
 
 <!--
-SLIDE 05: Design patterns to the rescue.
+/SLIDES/05: Design patterns to the rescue.
 - Tiling content helps keeps units of content more scanable
 -->
 <% if (slide >= 5) { %>
@@ -53,14 +58,14 @@ SLIDE 05: Design patterns to the rescue.
 <% } %>
 
 <!--
-SLIDE 06: Get that content max width under control
+/SLIDES/06: Get that content max width under control
 -->
 <% if (slide >= 6) { %>
   <link href='/css/max_width.css' rel='stylesheet' type='text/css' />
 <% } %>
 
 <!--
-SLIDE 07: Re-arranging header on larger screens.
+/SLIDES/07: Re-arranging header on larger screens.
 -->
 <% if (slide >= 7) { %>
   <link href='/css/header_wide.css' rel='stylesheet' type='text/css' />
