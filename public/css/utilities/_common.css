@@ -44,6 +44,6 @@
 }
 
 .page {}
-.region { padding: 1em; }
+.page-region { padding: 1em; }
 .component { margin-bottom: 0.75em; }
 .component:last-child { margin-bottom: 0; }
