@@ -1,11 +1,18 @@
 /* Medium screens */
 @media (min-width: 40.063em) { /* min-width 641px, medium screens */
   .features {
-    float: left;
+    float: left; /* don't forget to clearfix */
     width: 60%;
   }
   .headlines {
-    float: left;
+    float: left; /* don't forget to clearfix */
     width: 40%;
   }
 }
+
+/*
+Other Examples
+@media (min-width: 700px) and (orientation: landscape) { ... }
+@media tv and (min-width: 700px) and (orientation: landscape) { ...  }
+@media not all and (monochrome) { ... }
+*/

@@ -1,6 +1,8 @@
 figure img {
   width: 100%;
 }
+
+/* http://alistapart.com/article/creating-intrinsic-ratios-for-video */
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;

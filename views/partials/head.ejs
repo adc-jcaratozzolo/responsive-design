@@ -29,6 +29,7 @@ SLIDE SHOW CONTENT STARTS HERE
 - initial-scale=1 sets zoom to fit neatly into the display
 - user-scalable=no
 - css @viewport ? broswser support unpredictable
+- without this meta tag, all other "mobile friendly" efforts are in vain
 -->
 <% if (slide >= 2) { %>
   <% include ./css_baseline %>
@@ -44,6 +45,11 @@ SLIDE SHOW CONTENT STARTS HERE
 
 <!--
 /SLIDES/04: CSS media queries help adjust layouts as display size increases.
+- this is where the "mobile first" concept comes into play
+- usually querying display width
+- as a strategy, default to styles that work well on small screens
+- using "min-width" introduce new styles for larger displays
+- be consistent, use the same trigger points, don't suddenly switch to "max-width"
 -->
 <% if (slide >= 4) { %>
   <link href='/css/layouts.css' rel='stylesheet' type='text/css' />
@@ -51,7 +57,7 @@ SLIDE SHOW CONTENT STARTS HERE
 
 <!--
 /SLIDES/05: Design patterns to the rescue.
-- Tiling content helps keeps units of content more scanable
+- Tiling content helps keep units of content more scanable
 -->
 <% if (slide >= 5) { %>
   <link href='/css/feature_tiles.css' rel='stylesheet' type='text/css' />
@@ -66,6 +72,7 @@ SLIDE SHOW CONTENT STARTS HERE
 
 <!--
 /SLIDES/07: Re-arranging header on larger screens.
+- again, due to our "mobile first" strategy, we don't have to overwrite much css to modify the layout
 -->
 <% if (slide >= 7) { %>
   <link href='/css/header_wide.css' rel='stylesheet' type='text/css' />
