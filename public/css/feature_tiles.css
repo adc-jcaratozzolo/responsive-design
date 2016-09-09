@@ -1,6 +1,6 @@
 .features .list > li {
   display: inline-block; /* for lists, display:inline-block is preferred over float */
-  width: 49%;
+  width: 49%; /* note this is applied on the <li> not the media object */
 }
 .features .list > li:first-child {
   width: 100%;
