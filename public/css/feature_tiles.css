@@ -1,7 +1,13 @@
 .features .list > li {
   display: inline-block;
-  width: 32%;
+  width: 49%;
 }
 .features .list > li:first-child {
   width: 100%;
+}
+/* Medium screens */
+@media (min-width: 40.063em) { /* min-width 641px, medium screens */
+  .features .list > li {
+    width: 32%;
+  }
 }
