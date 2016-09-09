@@ -1,5 +1,5 @@
 .features .list > li {
-  display: inline-block; /* for lists, display:inline-block is preferred over float.
+  display: inline-block; /* for lists, display:inline-block is preferred over float */
   width: 49%;
 }
 .features .list > li:first-child {
