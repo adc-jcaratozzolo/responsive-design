@@ -101,6 +101,7 @@ svg:not(:root) {
 }
 
 figure {
+  padding: 0.25em;
   margin: 0 0 0.5em;
 }
 

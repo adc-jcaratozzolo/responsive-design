@@ -1,0 +1,11 @@
+/* Medium screens */
+@media (min-width: 40.063em) { /* min-width 641px, medium screens */
+  .features {
+    float: left;
+    width: 60%;
+  }
+  .headlines {
+    float: left;
+    width: 40%;
+  }
+}

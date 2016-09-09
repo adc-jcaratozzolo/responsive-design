@@ -13,7 +13,7 @@ SLIDE SHOW CONTENT
 <!--
 SLIDE 01: No CSS here to illustrate importance of good markup
 -->
-<% if (slide === 0) { %>
+<% if (slide >= 1) { %>
 
 <% } %>
 
@@ -23,13 +23,45 @@ SLIDE 02: Restore baseline CSS and introduce <meta name='viewport'>
 - initial-scale=1
 - user-scalable=no
 -->
-<% if (slide > 1) { %>
+<% if (slide >= 2) { %>
   <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
   <link href='/css/utilities/_normalize.css' rel='stylesheet' type='text/css' />
   <link href='/css/utilities/_base.css' rel='stylesheet' type='text/css' />
   <link href='/css/utilities/_common.css' rel='stylesheet' type='text/css' />
 <% } %>
 
-<% if (slide > 2) { %>
+<!--
+SLIDE 03: Images and embedded videos don't automatically resize like other block elements.
+-->
+<% if (slide >= 3) { %>
   <link href='/css/media.css' rel='stylesheet' type='text/css' />
+<% } %>
+
+<!--
+SLIDE 04: CSS media queries help adjust layouts as display size increases.
+-->
+<% if (slide >= 4) { %>
+  <link href='/css/layouts.css' rel='stylesheet' type='text/css' />
+<% } %>
+
+<!--
+SLIDE 05: Design patterns to the rescue.
+- Tiling content helps keeps units of content more scanable
+-->
+<% if (slide >= 5) { %>
+  <link href='/css/feature_tiles.css' rel='stylesheet' type='text/css' />
+<% } %>
+
+<!--
+SLIDE 06: Get that content max width under control
+-->
+<% if (slide >= 6) { %>
+  <link href='/css/max_width.css' rel='stylesheet' type='text/css' />
+<% } %>
+
+<!--
+SLIDE 07: Re-arranging header on larger screens.
+-->
+<% if (slide >= 7) { %>
+  <link href='/css/header_wide.css' rel='stylesheet' type='text/css' />
 <% } %>

@@ -10,6 +10,16 @@
   margin: 0;
 }
 
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 /* Branding */
 .header, .footer {
   background-color: #F66;
@@ -22,11 +32,18 @@
   padding: 1em 2em;
   background-color: white;
   opacity: 0.75;
-  font-style: normal;
   font-weight: bold;
+}
+.logo a {
   color: #F66;
+}
+.headlines .list > li {
+  padding-bottom: 0.25em;
+  margin-bottom: 0.25em;
+  border-bottom: 1px solid #DDD;
 }
 
 .page {}
 .region { padding: 1em; }
 .component { margin-bottom: 0.75em; }
+.component:last-child { margin-bottom: 0; }

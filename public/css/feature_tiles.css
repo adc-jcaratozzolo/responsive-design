@@ -1,0 +1,7 @@
+.features .list > li {
+  display: inline-block;
+  width: 32%;
+}
+.features .list > li:first-child {
+  width: 100%;
+}
